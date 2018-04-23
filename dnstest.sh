@@ -8,6 +8,15 @@ command -v bc > /dev/null || { echo "bc was not found. Please install bc."; exit
 NAMESERVERS=`cat /etc/resolv.conf | grep ^nameserver | cut -d " " -f 2 | sed 's/\(.*\)/&#&/'`
 
 PROVIDERS="
+114.114.114.114#114(1)
+114.114.115.115#114(2)
+223.5.5.5#阿里(1)
+223.6.6.6#阿里(2)
+202.96.209.5#上海电信(1)
+202.96.209.133#上海电信(2)
+116.228.111.118#上海电信(3)
+119.29.29.29#DNSPod(1)
+182.254.116.116#DNSPod(2)
 1.1.1.1#cloudflare 
 4.2.2.1#level3 
 8.8.8.8#google 
@@ -23,7 +32,7 @@ PROVIDERS="
 "
 
 # Domains to test. Duplicated domains are ok
-DOMAINS2TEST="www.google.com amazon.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com www.google.com whatsapp.com"
+DOMAINS2TEST="download.xbox.com epix.xbox.com tiles.xbox.com www.bilibili.com www.google.com amazon.com facebook.com www.youtube.com www.reddit.com  wikipedia.org twitter.com gmail.com whatsapp.com"
 
 
 totaldomains=0
